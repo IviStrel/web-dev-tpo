@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra los mejores locales comerciales en nuestro centro comercial">
+    <title>Locales Comerciales - Centro Comercial Temático</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/stores.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <header role="banner">
+        <nav role="navigation" aria-label="Navegación principal">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html" aria-label="Ir a inicio">
+                        <h1>Centro Temático</h1>
+                    </a>
+                </div>
+                <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="main-menu" class="nav-menu" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Inicio</a></li>
+                    <li role="none"><a href="services.html" role="menuitem">Servicios</a></li>
+                    <li role="none"><a href="entertainment.html" role="menuitem">Entretenimiento</a></li>
+                    <li role="none"><a href="stores.html" role="menuitem" aria-current="page">Locales</a></li>
+                    <li role="none"><a href="offers.html" role="menuitem">Ofertas</a></li>
+                    <li role="none"><a href="dining.html" role="menuitem">Gastronomía</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="page-header" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title">Locales Comerciales</h1>
+                <p class="page-subtitle">Encuentra el local que buscas</p>
+            </div>
+        </section>
+
+        <section class="stores-section" aria-labelledby="search-title">
+            <div class="container">
+                <div class="search-container">
+                    <h2 id="search-title" class="sr-only">Buscar locales</h2>
+                    <div class="search-wrapper">
+                        <label for="store-search" class="search-label">Buscar por nombre o categoría</label>
+                        <div class="search-input-wrapper">
+                            <input 
+                                type="text" 
+                                id="store-search" 
+                                class="search-input"
+                                placeholder="Ej: ropa, tecnología, zapatos..."
+                                aria-label="Buscar locales comerciales"
+                                autocomplete="off">
+                            <span class="search-icon" aria-hidden="true">🔍</span>
+                        </div>
+                        <div id="search-results-count" class="search-results-count" role="status" aria-live="polite"></div>
+                    </div>
+                    
+                    <div class="filter-container">
+                        <label for="category-filter" class="filter-label">Filtrar por categoría</label>
+                        <select id="category-filter" class="filter-select" aria-label="Filtrar locales por categoría">
+                            <option value="all">Todas las categorías</option>
+                            <option value="ropa">Ropa y Moda</option>
+                            <option value="tecnologia">Tecnología</option>
+                            <option value="deportes">Deportes</option>
+                            <option value="belleza">Belleza y Cosmética</option>
+                            <option value="hogar">Hogar y Decoración</option>
+                            <option value="juguetes">Juguetes</option>
+                            <option value="libros">Libros y Papelería</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stores-section" aria-labelledby="map-title">
+            <div class="container">
+                <h2 id="map-title">Mapa Interactivo</h2>
+                <div class="map-container">
+                    <div id="store-map" class="store-map" role="img" aria-label="Mapa del centro comercial con ubicación de locales">
+                        <div class="map-legend">
+                            <h3>Leyenda</h3>
+                            <ul>
+                                <li><span class="legend-color nivel1"></span> Nivel 1</li>
+                                <li><span class="legend-color nivel2"></span> Nivel 2</li>
+                                <li><span class="legend-color nivel3"></span> Nivel 3</li>
+                            </ul>
+                        </div>
+                        <div class="map-grid" id="map-grid">
+                            <!-- // -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stores-section" aria-labelledby="stores-list-title">
+            <div class="container">
+                <h2 id="stores-list-title">Lista de Locales</h2>
+                <div id="stores-list" class="stores-list" role="list">
+                    <!-- // -->
+                </div>
+                <div id="no-results" class="no-results" role="alert" aria-live="polite" style="display: none;">
+                    <p>No se encontraron locales que coincidan con tu búsqueda.</p>
+                    <button class="btn" onclick="clearFilters()">Limpiar filtros</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Centro Temático</h3>
+                    <p>Tu destino para compras, entretenimiento y experiencias únicas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="entertainment.html">Entretenimiento</a></li>
+                        <li><a href="stores.html">Locales</a></li>
+                        <li><a href="offers.html">Ofertas</a></li>
+                        <li><a href="dining.html">Gastronomía</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Dirección: Av. Principal 1234</p>
+                    <p>Teléfono: (011) 1234-5678</p>
+                    <p>Email: info@centrotematico.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lunes a Viernes: 10:00 - 22:00</p>
+                    <p>Sábados y Domingos: 10:00 - 23:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Centro Temático. Todos los derechos reservados.</p>
+                <p>Diseñado con accesibilidad y usabilidad en mente.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/stores.js"></script>
+</body>
+</html>
+
