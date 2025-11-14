@@ -1,135 +1,178 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Espacios gastronómicos en nuestro centro comercial">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Espacios gastronómicos en nuestro centro comercial"
+    />
     <title>Gastronomía - Centro Comercial Temático</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/dining.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/dining.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
-    
+
     <header role="banner">
-        <nav role="navigation" aria-label="Navegación principal">
-            <div class="nav-container">
-                <div class="logo">
-                    <a href="index.html" aria-label="Ir a inicio">
-                        <h1>Centro Temático</h1>
-                    </a>
-                </div>
-                <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul id="main-menu" class="nav-menu" role="menubar">
-                    <li role="none"><a href="index.html" role="menuitem">Inicio</a></li>
-                    <li role="none"><a href="services.html" role="menuitem">Servicios</a></li>
-                    <li role="none"><a href="entertainment.html" role="menuitem">Entretenimiento</a></li>
-                    <li role="none"><a href="stores.html" role="menuitem">Locales</a></li>
-                    <li role="none"><a href="offers.html" role="menuitem">Ofertas</a></li>
-                    <li role="none"><a href="dining.html" role="menuitem" aria-current="page">Gastronomía</a></li>
-                    <li role="none"><a href="contact.html" role="menuitem">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav role="navigation" aria-label="Navegación principal">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html" aria-label="Ir a inicio">
+              <h1>Centro Temático</h1>
+            </a>
+          </div>
+          <button
+            class="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="main-menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="main-menu" class="nav-menu" role="menubar">
+            <li role="none"><a href="index.html" role="menuitem">Inicio</a></li>
+            <li role="none">
+              <a href="services.html" role="menuitem">Servicios</a>
+            </li>
+            <li role="none">
+              <a href="entertainment.html" role="menuitem">Entretenimiento</a>
+            </li>
+            <li role="none">
+              <a href="stores.html" role="menuitem">Locales</a>
+            </li>
+            <li role="none">
+              <a href="offers.html" role="menuitem">Ofertas</a>
+            </li>
+            <li role="none">
+              <a href="dining.html" role="menuitem" aria-current="page"
+                >Gastronomía</a
+              >
+            </li>
+            <li role="none">
+              <a href="contact.html" role="menuitem">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main id="main-content" role="main">
-        <section class="page-header" aria-labelledby="page-title">
-            <div class="container">
-                <h1 id="page-title">Gastronomía</h1>
-                <p class="page-subtitle">Sabores para todos los gustos</p>
-            </div>
-        </section>
+      <section class="page-header" aria-labelledby="page-title">
+        <div class="container">
+          <h1 id="page-title">Gastronomía</h1>
+          <p class="page-subtitle">Sabores para todos los gustos</p>
+        </div>
+      </section>
 
-        <section class="dining-section" aria-labelledby="restaurants-title">
-            <div class="container">
-                <h2 id="restaurants-title" class="section-title">Restaurantes y Cafeterías</h2>
-                <div class="dining-grid" id="dining-grid">
-                    <!-- // -->
-                </div>
-            </div>
-        </section>
+      <section class="dining-section" aria-labelledby="restaurants-title">
+        <div class="container">
+          <h2 id="restaurants-title" class="section-title">
+            Restaurantes y Cafeterías
+          </h2>
+          <div class="dining-grid" id="dining-grid">
+            <!-- // -->
+          </div>
+        </div>
+      </section>
 
-        <section class="dining-section" aria-labelledby="food-court-title">
-            <div class="container">
-                <h2 id="food-court-title" class="section-title">Patio de Comidas</h2>
-                <div class="food-court-description">
-                    <p>Nuestro amplio patio de comidas ofrece una variedad de opciones gastronómicas para todos los gustos. Desde comida rápida hasta platos gourmet, encontrarás algo perfecto para ti.</p>
-                </div>
-                <div class="food-court-features">
-                    <div class="feature-item">
-                        <span class="feature-icon" aria-hidden="true">🍕</span>
-                        <h3>Comida Rápida</h3>
-                        <p>Hamburguesas, pizzas, tacos y más</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon" aria-hidden="true">🍜</span>
-                        <h3>Comida Internacional</h3>
-                        <p>Sabores de todo el mundo</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon" aria-hidden="true">☕</span>
-                        <h3>Cafeterías</h3>
-                        <p>Café, té y bebidas calientes</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon" aria-hidden="true">🍰</span>
-                        <h3>Postres y Helados</h3>
-                        <p>Dulces para endulzar tu día</p>
-                    </div>
-                </div>
+      <section class="dining-section" aria-labelledby="food-court-title">
+        <div class="container">
+          <h2 id="food-court-title" class="section-title">Patio de Comidas</h2>
+          <div class="food-court-description">
+            <p>
+              Nuestro amplio patio de comidas ofrece una variedad de opciones
+              gastronómicas para todos los gustos. Desde comida rápida hasta
+              platos gourmet, encontrarás algo perfecto para ti.
+            </p>
+          </div>
+          <div class="food-court-features">
+            <div class="feature-item">
+              <span class="feature-icon" aria-hidden="true">🍕</span>
+              <h3>Comida Rápida</h3>
+              <p>Hamburguesas, pizzas, tacos y más</p>
             </div>
-        </section>
+            <div class="feature-item">
+              <span class="feature-icon" aria-hidden="true">🍜</span>
+              <h3>Comida Internacional</h3>
+              <p>Sabores de todo el mundo</p>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon" aria-hidden="true">☕</span>
+              <h3>Cafeterías</h3>
+              <p>Café, té y bebidas calientes</p>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon" aria-hidden="true">🍰</span>
+              <h3>Postres y Helados</h3>
+              <p>Dulces para endulzar tu día</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Centro Temático</h3>
-                    <p>Tu destino para compras, entretenimiento y experiencias únicas.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Enlaces</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="services.html">Servicios</a></li>
-                        <li><a href="entertainment.html">Entretenimiento</a></li>
-                        <li><a href="stores.html">Locales</a></li>
-                        <li><a href="offers.html">Ofertas</a></li>
-                        <li><a href="dining.html">Gastronomía</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contacto</h4>
-                    <p>Dirección: Av. Principal 1234</p>
-                    <p>Teléfono: (011) 1234-5678</p>
-                    <p>Email: info@centrotematico.com</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Horarios</h4>
-                    <p>Lunes a Viernes: 10:00 - 22:00</p>
-                    <p>Sábados y Domingos: 10:00 - 23:00</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Centro Temático. Todos los derechos reservados.</p>
-                <p>Diseñado con accesibilidad y usabilidad en mente.</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Centro Temático</h3>
+            <p>
+              Tu destino para compras, entretenimiento y experiencias únicas.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Enlaces</h4>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="services.html">Servicios</a></li>
+              <li><a href="entertainment.html">Entretenimiento</a></li>
+              <li><a href="stores.html">Locales</a></li>
+              <li><a href="offers.html">Ofertas</a></li>
+              <li><a href="dining.html">Gastronomía</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>Dirección: Av. Principal 1234</p>
+            <p>Teléfono: (011) 1234-5678</p>
+            <p>Email: info@centrotematico.com</p>
+          </div>
+          <div class="footer-section">
+            <h4>Horarios</h4>
+            <p>Lunes a Viernes: 10:00 - 22:00</p>
+            <p>Sábados y Domingos: 10:00 - 23:00</p>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Centro Temático. Todos los derechos reservados.</p>
+          <p>Diseñado con accesibilidad y usabilidad en mente.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="js/navigation.js"></script>
     <script src="js/dining.js"></script>
-</body>
-</html>
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+      rel="stylesheet"
+    />
+    <script type="module">
+      import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
+      import { chatBotConfig } from "./config/chat-bot.js";
+
+      createChat(chatBotConfig);
+    </script>
+  </body>
+</html>

@@ -1,246 +1,333 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Espacios recreativos y culturales en nuestro centro comercial">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Espacios recreativos y culturales en nuestro centro comercial"
+    />
     <title>Entretenimiento - Centro Comercial Temático</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/entertainment.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/entertainment.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
-    
+
     <header role="banner">
-        <nav role="navigation" aria-label="Navegación principal">
-            <div class="nav-container">
-                <div class="logo">
-                    <a href="index.html" aria-label="Ir a inicio">
-                        <h1>Centro Temático</h1>
-                    </a>
-                </div>
-                <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul id="main-menu" class="nav-menu" role="menubar">
-                    <li role="none"><a href="index.html" role="menuitem">Inicio</a></li>
-                    <li role="none"><a href="services.html" role="menuitem">Servicios</a></li>
-                    <li role="none"><a href="entertainment.html" role="menuitem" aria-current="page">Entretenimiento</a></li>
-                    <li role="none"><a href="stores.html" role="menuitem">Locales</a></li>
-                    <li role="none"><a href="offers.html" role="menuitem">Ofertas</a></li>
-                    <li role="none"><a href="dining.html" role="menuitem">Gastronomía</a></li>
-                    <li role="none"><a href="contact.html" role="menuitem">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav role="navigation" aria-label="Navegación principal">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html" aria-label="Ir a inicio">
+              <h1>Centro Temático</h1>
+            </a>
+          </div>
+          <button
+            class="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="main-menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="main-menu" class="nav-menu" role="menubar">
+            <li role="none"><a href="index.html" role="menuitem">Inicio</a></li>
+            <li role="none">
+              <a href="services.html" role="menuitem">Servicios</a>
+            </li>
+            <li role="none">
+              <a href="entertainment.html" role="menuitem" aria-current="page"
+                >Entretenimiento</a
+              >
+            </li>
+            <li role="none">
+              <a href="stores.html" role="menuitem">Locales</a>
+            </li>
+            <li role="none">
+              <a href="offers.html" role="menuitem">Ofertas</a>
+            </li>
+            <li role="none">
+              <a href="dining.html" role="menuitem">Gastronomía</a>
+            </li>
+            <li role="none">
+              <a href="contact.html" role="menuitem">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main id="main-content" role="main">
-        <section class="page-header" aria-labelledby="page-title">
-            <div class="container">
-                <h1 id="page-title">Entretenimiento</h1>
-                <p class="page-subtitle">Espacios recreativos y culturales para toda la familia</p>
-            </div>
-        </section>
+      <section class="page-header" aria-labelledby="page-title">
+        <div class="container">
+          <h1 id="page-title">Entretenimiento</h1>
+          <p class="page-subtitle">
+            Espacios recreativos y culturales para toda la familia
+          </p>
+        </div>
+      </section>
 
-        <section class="entertainment-section" aria-labelledby="cinema-title">
-            <div class="container">
-                <div class="entertainment-card">
-                    <div class="entertainment-image">
-                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&h=600&fit=crop" 
-                             alt="Sala de cine moderna con butacas cómodas y pantalla grande">
-                    </div>
-                    <div class="entertainment-content">
-                        <h2 id="cinema-title">Cine Multiplex</h2>
-                        <p class="entertainment-description">Disfruta de las últimas películas en nuestras 8 salas de cine con tecnología de última generación. Pantallas 4K, sonido envolvente y butacas reclinables para una experiencia única.</p>
-                        <ul class="entertainment-features">
-                            <li>8 salas con tecnología 4K</li>
-                            <li>Sonido Dolby Atmos</li>
-                            <li>Butacas reclinables</li>
-                            <li>Salas VIP disponibles</li>
-                            <li>Programación diaria</li>
-                        </ul>
-                        <div class="entertainment-info">
-                            <p><strong>Horarios:</strong> Todos los días, 12:00 - 00:00</p>
-                            <p><strong>Ubicación:</strong> Nivel 3</p>
-                        </div>
-                    </div>
-                </div>
+      <section class="entertainment-section" aria-labelledby="cinema-title">
+        <div class="container">
+          <div class="entertainment-card">
+            <div class="entertainment-image">
+              <img
+                src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&h=600&fit=crop"
+                alt="Sala de cine moderna con butacas cómodas y pantalla grande"
+              />
             </div>
-        </section>
+            <div class="entertainment-content">
+              <h2 id="cinema-title">Cine Multiplex</h2>
+              <p class="entertainment-description">
+                Disfruta de las últimas películas en nuestras 8 salas de cine
+                con tecnología de última generación. Pantallas 4K, sonido
+                envolvente y butacas reclinables para una experiencia única.
+              </p>
+              <ul class="entertainment-features">
+                <li>8 salas con tecnología 4K</li>
+                <li>Sonido Dolby Atmos</li>
+                <li>Butacas reclinables</li>
+                <li>Salas VIP disponibles</li>
+                <li>Programación diaria</li>
+              </ul>
+              <div class="entertainment-info">
+                <p><strong>Horarios:</strong> Todos los días, 12:00 - 00:00</p>
+                <p><strong>Ubicación:</strong> Nivel 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="entertainment-section" aria-labelledby="arcade-title">
-            <div class="container">
-                <div class="entertainment-card reverse">
-                    <div class="entertainment-image">
-                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=600&fit=crop" 
-                             alt="Sala de juegos con máquinas arcade y videojuegos modernos">
-                    </div>
-                    <div class="entertainment-content">
-                        <h2 id="arcade-title">Sala de Juegos</h2>
-                        <p class="entertainment-description">Más de 100 máquinas de videojuegos, simuladores de realidad virtual y juegos de premios. Diversión garantizada para todas las edades.</p>
-                        <ul class="entertainment-features">
-                            <li>100+ máquinas arcade</li>
-                            <li>Realidad virtual</li>
-                            <li>Simuladores de carreras</li>
-                            <li>Juegos de premios</li>
-                            <li>Zona para niños</li>
-                        </ul>
-                        <div class="entertainment-info">
-                            <p><strong>Horarios:</strong> Lunes a Domingo, 10:00 - 23:00</p>
-                            <p><strong>Ubicación:</strong> Nivel 2</p>
-                        </div>
-                    </div>
-                </div>
+      <section class="entertainment-section" aria-labelledby="arcade-title">
+        <div class="container">
+          <div class="entertainment-card reverse">
+            <div class="entertainment-image">
+              <img
+                src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=600&fit=crop"
+                alt="Sala de juegos con máquinas arcade y videojuegos modernos"
+              />
             </div>
-        </section>
+            <div class="entertainment-content">
+              <h2 id="arcade-title">Sala de Juegos</h2>
+              <p class="entertainment-description">
+                Más de 100 máquinas de videojuegos, simuladores de realidad
+                virtual y juegos de premios. Diversión garantizada para todas
+                las edades.
+              </p>
+              <ul class="entertainment-features">
+                <li>100+ máquinas arcade</li>
+                <li>Realidad virtual</li>
+                <li>Simuladores de carreras</li>
+                <li>Juegos de premios</li>
+                <li>Zona para niños</li>
+              </ul>
+              <div class="entertainment-info">
+                <p><strong>Horarios:</strong> Lunes a Domingo, 10:00 - 23:00</p>
+                <p><strong>Ubicación:</strong> Nivel 2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="entertainment-section" aria-labelledby="bowling-title">
-            <div class="container">
-                <div class="entertainment-card">
-                    <div class="entertainment-image">
-                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=600&fit=crop" 
-                             alt="Pista de bowling moderna con iluminación especial">
-                    </div>
-                    <div class="entertainment-content">
-                        <h2 id="bowling-title">Bolera</h2>
-                        <p class="entertainment-description">12 pistas de bowling profesionales con iluminación especial y música ambiente. Perfecto para eventos grupales y diversión familiar.</p>
-                        <ul class="entertainment-features">
-                            <li>12 pistas profesionales</li>
-                            <li>Iluminación especial</li>
-                            <li>Bar y snacks</li>
-                            <li>Reservas para grupos</li>
-                            <li>Torneos mensuales</li>
-                        </ul>
-                        <div class="entertainment-info">
-                            <p><strong>Horarios:</strong> Lunes a Domingo, 14:00 - 23:00</p>
-                            <p><strong>Ubicación:</strong> Nivel 1</p>
-                        </div>
-                    </div>
-                </div>
+      <section class="entertainment-section" aria-labelledby="bowling-title">
+        <div class="container">
+          <div class="entertainment-card">
+            <div class="entertainment-image">
+              <img
+                src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=600&fit=crop"
+                alt="Pista de bowling moderna con iluminación especial"
+              />
             </div>
-        </section>
+            <div class="entertainment-content">
+              <h2 id="bowling-title">Bolera</h2>
+              <p class="entertainment-description">
+                12 pistas de bowling profesionales con iluminación especial y
+                música ambiente. Perfecto para eventos grupales y diversión
+                familiar.
+              </p>
+              <ul class="entertainment-features">
+                <li>12 pistas profesionales</li>
+                <li>Iluminación especial</li>
+                <li>Bar y snacks</li>
+                <li>Reservas para grupos</li>
+                <li>Torneos mensuales</li>
+              </ul>
+              <div class="entertainment-info">
+                <p><strong>Horarios:</strong> Lunes a Domingo, 14:00 - 23:00</p>
+                <p><strong>Ubicación:</strong> Nivel 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="entertainment-section" aria-labelledby="cultural-title">
-            <div class="container">
-                <h2 id="cultural-title" class="section-title">Espacios Culturales</h2>
-                <div class="cultural-grid">
-                    <div class="cultural-item">
-                        <div class="cultural-icon" aria-hidden="true">🎭</div>
-                        <h3>Teatro</h3>
-                        <p>Espacio cultural con capacidad para 200 personas. Presentamos obras de teatro, conciertos y eventos culturales durante todo el año.</p>
-                        <p class="cultural-schedule"><strong>Próximos eventos:</strong> Consultar programación mensual</p>
-                    </div>
-                    <div class="cultural-item">
-                        <div class="cultural-icon" aria-hidden="true">🖼️</div>
-                        <h3>Galería de Arte</h3>
-                        <p>Exposiciones rotativas de artistas locales e internacionales. Entrada gratuita.</p>
-                        <p class="cultural-schedule"><strong>Horarios:</strong> Martes a Domingo, 11:00 - 20:00</p>
-                    </div>
-                    <div class="cultural-item">
-                        <div class="cultural-icon" aria-hidden="true">📚</div>
-                        <h3>Biblioteca y Sala de Lectura</h3>
-                        <p>Espacio tranquilo para lectura y estudio. Más de 5000 libros disponibles y área de trabajo.</p>
-                        <p class="cultural-schedule"><strong>Horarios:</strong> Lunes a Domingo, 9:00 - 21:00</p>
-                    </div>
-                    <div class="cultural-item">
-                        <div class="cultural-icon" aria-hidden="true">🎵</div>
-                        <h3>Estudio de Música</h3>
-                        <p>Clases de música, ensayos y presentaciones. Equipamiento profesional disponible.</p>
-                        <p class="cultural-schedule"><strong>Horarios:</strong> Consultar disponibilidad</p>
-                    </div>
-                </div>
+      <section class="entertainment-section" aria-labelledby="cultural-title">
+        <div class="container">
+          <h2 id="cultural-title" class="section-title">Espacios Culturales</h2>
+          <div class="cultural-grid">
+            <div class="cultural-item">
+              <div class="cultural-icon" aria-hidden="true">🎭</div>
+              <h3>Teatro</h3>
+              <p>
+                Espacio cultural con capacidad para 200 personas. Presentamos
+                obras de teatro, conciertos y eventos culturales durante todo el
+                año.
+              </p>
+              <p class="cultural-schedule">
+                <strong>Próximos eventos:</strong> Consultar programación
+                mensual
+              </p>
             </div>
-        </section>
+            <div class="cultural-item">
+              <div class="cultural-icon" aria-hidden="true">🖼️</div>
+              <h3>Galería de Arte</h3>
+              <p>
+                Exposiciones rotativas de artistas locales e internacionales.
+                Entrada gratuita.
+              </p>
+              <p class="cultural-schedule">
+                <strong>Horarios:</strong> Martes a Domingo, 11:00 - 20:00
+              </p>
+            </div>
+            <div class="cultural-item">
+              <div class="cultural-icon" aria-hidden="true">📚</div>
+              <h3>Biblioteca y Sala de Lectura</h3>
+              <p>
+                Espacio tranquilo para lectura y estudio. Más de 5000 libros
+                disponibles y área de trabajo.
+              </p>
+              <p class="cultural-schedule">
+                <strong>Horarios:</strong> Lunes a Domingo, 9:00 - 21:00
+              </p>
+            </div>
+            <div class="cultural-item">
+              <div class="cultural-icon" aria-hidden="true">🎵</div>
+              <h3>Estudio de Música</h3>
+              <p>
+                Clases de música, ensayos y presentaciones. Equipamiento
+                profesional disponible.
+              </p>
+              <p class="cultural-schedule">
+                <strong>Horarios:</strong> Consultar disponibilidad
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="entertainment-section" aria-labelledby="events-title">
-            <div class="container">
-                <h2 id="events-title" class="section-title">Eventos y Actividades</h2>
-                <div class="events-timeline">
-                    <div class="event-item">
-                        <div class="event-date">
-                            <span class="event-day">Sáb</span>
-                            <span class="event-time">15:00</span>
-                        </div>
-                        <div class="event-content">
-                            <h3>Taller de Arte para Niños</h3>
-                            <p>Actividad creativa para niños de 5 a 12 años. Materiales incluidos.</p>
-                            <p class="event-location">📍 Galería de Arte - Nivel 2</p>
-                        </div>
-                    </div>
-                    <div class="event-item">
-                        <div class="event-date">
-                            <span class="event-day">Dom</span>
-                            <span class="event-time">18:00</span>
-                        </div>
-                        <div class="event-content">
-                            <h3>Concierto en Vivo</h3>
-                            <p>Presentaciones de artistas locales todos los domingos. Entrada gratuita.</p>
-                            <p class="event-location">📍 Teatro - Nivel 3</p>
-                        </div>
-                    </div>
-                    <div class="event-item">
-                        <div class="event-date">
-                            <span class="event-day">Vie</span>
-                            <span class="event-time">20:00</span>
-                        </div>
-                        <div class="event-content">
-                            <h3>Torneo de Bowling</h3>
-                            <p>Torneo semanal abierto a todos. Premios para los ganadores.</p>
-                            <p class="event-location">📍 Bolera - Nivel 1</p>
-                        </div>
-                    </div>
-                </div>
+      <section class="entertainment-section" aria-labelledby="events-title">
+        <div class="container">
+          <h2 id="events-title" class="section-title">Eventos y Actividades</h2>
+          <div class="events-timeline">
+            <div class="event-item">
+              <div class="event-date">
+                <span class="event-day">Sáb</span>
+                <span class="event-time">15:00</span>
+              </div>
+              <div class="event-content">
+                <h3>Taller de Arte para Niños</h3>
+                <p>
+                  Actividad creativa para niños de 5 a 12 años. Materiales
+                  incluidos.
+                </p>
+                <p class="event-location">📍 Galería de Arte - Nivel 2</p>
+              </div>
             </div>
-        </section>
+            <div class="event-item">
+              <div class="event-date">
+                <span class="event-day">Dom</span>
+                <span class="event-time">18:00</span>
+              </div>
+              <div class="event-content">
+                <h3>Concierto en Vivo</h3>
+                <p>
+                  Presentaciones de artistas locales todos los domingos. Entrada
+                  gratuita.
+                </p>
+                <p class="event-location">📍 Teatro - Nivel 3</p>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-date">
+                <span class="event-day">Vie</span>
+                <span class="event-time">20:00</span>
+              </div>
+              <div class="event-content">
+                <h3>Torneo de Bowling</h3>
+                <p>
+                  Torneo semanal abierto a todos. Premios para los ganadores.
+                </p>
+                <p class="event-location">📍 Bolera - Nivel 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Centro Temático</h3>
-                    <p>Tu destino para compras, entretenimiento y experiencias únicas.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Enlaces</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="services.html">Servicios</a></li>
-                        <li><a href="entertainment.html">Entretenimiento</a></li>
-                        <li><a href="stores.html">Locales</a></li>
-                        <li><a href="offers.html">Ofertas</a></li>
-                        <li><a href="dining.html">Gastronomía</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contacto</h4>
-                    <p>Dirección: Av. Principal 1234</p>
-                    <p>Teléfono: (011) 1234-5678</p>
-                    <p>Email: info@centrotematico.com</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Horarios</h4>
-                    <p>Lunes a Viernes: 10:00 - 22:00</p>
-                    <p>Sábados y Domingos: 10:00 - 23:00</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Centro Temático. Todos los derechos reservados.</p>
-                <p>Diseñado con accesibilidad y usabilidad en mente.</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Centro Temático</h3>
+            <p>
+              Tu destino para compras, entretenimiento y experiencias únicas.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Enlaces</h4>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="services.html">Servicios</a></li>
+              <li><a href="entertainment.html">Entretenimiento</a></li>
+              <li><a href="stores.html">Locales</a></li>
+              <li><a href="offers.html">Ofertas</a></li>
+              <li><a href="dining.html">Gastronomía</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>Dirección: Av. Principal 1234</p>
+            <p>Teléfono: (011) 1234-5678</p>
+            <p>Email: info@centrotematico.com</p>
+          </div>
+          <div class="footer-section">
+            <h4>Horarios</h4>
+            <p>Lunes a Viernes: 10:00 - 22:00</p>
+            <p>Sábados y Domingos: 10:00 - 23:00</p>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Centro Temático. Todos los derechos reservados.</p>
+          <p>Diseñado con accesibilidad y usabilidad en mente.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="js/navigation.js"></script>
     <script src="js/entertainment.js"></script>
-</body>
-</html>
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+      rel="stylesheet"
+    />
+    <script type="module">
+      import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
+      import { chatBotConfig } from "./config/chat-bot.js";
+
+      createChat(chatBotConfig);
+    </script>
+  </body>
+</html>
