@@ -4,14 +4,14 @@ export const chatBotConfig = {
 
   initialMessages: [
     "¡Hola! 👋",
-    "Mi nombre es Nathan. ¿En qué puedo ayudarte hoy?",
+    "Mi nombre es KotoBot. ¿En qué puedo ayudarte hoy?",
   ],
 
   defaultLanguage: "es",
 
   i18n: {
     es: {
-      title: "¡Hola! 👋",
+      title: "KotoBot",
       subtitle:
         "Inicia un chat. Estamos aquí para ayudarte las 24 horas del día, los 7 días de la semana.",
       footer: "",

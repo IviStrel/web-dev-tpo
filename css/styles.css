@@ -111,6 +111,11 @@ p {
   color: var(--text--secondary);
 }
 
+p:is(.chat-layout p) {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
 a {
   color: var(--primary-color);
   text-decoration: none;
