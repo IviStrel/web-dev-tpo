@@ -1,24 +1,14 @@
 const stores = [
-    { id: 1, name: 'Fashion Store', category: 'ropa', nivel: 1, location: 'A-12', description: 'Ropa de moda para toda la familia', phone: '(011) 1234-5678' },
-    { id: 2, name: 'Tech World', category: 'tecnologia', nivel: 2, location: 'B-05', description: 'Tecnología y electrónica', phone: '(011) 1234-5679' },
-    { id: 3, name: 'Sports Zone', category: 'deportes', nivel: 1, location: 'A-25', description: 'Artículos deportivos', phone: '(011) 1234-5680' },
-    { id: 4, name: 'Beauty Corner', category: 'belleza', nivel: 2, location: 'B-18', description: 'Cosméticos y productos de belleza', phone: '(011) 1234-5681' },
-    { id: 5, name: 'Home Design', category: 'hogar', nivel: 3, location: 'C-08', description: 'Decoración y muebles', phone: '(011) 1234-5682' },
-    { id: 6, name: 'Toy Land', category: 'juguetes', nivel: 2, location: 'B-30', description: 'Juguetes para todas las edades', phone: '(011) 1234-5683' },
-    { id: 7, name: 'Book Haven', category: 'libros', nivel: 3, location: 'C-15', description: 'Libros y papelería', phone: '(011) 1234-5684' },
-    { id: 8, name: 'Shoe Palace', category: 'ropa', nivel: 1, location: 'A-40', description: 'Calzado para toda la familia', phone: '(011) 1234-5685' },
-    { id: 9, name: 'Gadget Hub', category: 'tecnologia', nivel: 2, location: 'B-12', description: 'Accesorios tecnológicos', phone: '(011) 1234-5686' },
-    { id: 10, name: 'Fitness Pro', category: 'deportes', nivel: 1, location: 'A-35', description: 'Equipamiento fitness', phone: '(011) 1234-5687' },
-    { id: 11, name: 'Cosmetic Store', category: 'belleza', nivel: 3, location: 'C-22', description: 'Perfumería y cosmética', phone: '(011) 1234-5688' },
-    { id: 12, name: 'Furniture Plus', category: 'hogar', nivel: 3, location: 'C-05', description: 'Muebles y accesorios', phone: '(011) 1234-5689' },
-    { id: 13, name: 'Kids World', category: 'juguetes', nivel: 2, location: 'B-25', description: 'Juguetes educativos', phone: '(011) 1234-5690' },
-    { id: 14, name: 'Stationery Shop', category: 'libros', nivel: 1, location: 'A-18', description: 'Papelería y útiles', phone: '(011) 1234-5691' },
-    { id: 15, name: 'Style Boutique', category: 'ropa', nivel: 2, location: 'B-08', description: 'Ropa de diseño', phone: '(011) 1234-5692' },
-    { id: 16, name: 'Electronics Plus', category: 'tecnologia', nivel: 3, location: 'C-12', description: 'Electrodomésticos', phone: '(011) 1234-5693' },
-    { id: 17, name: 'Outdoor Gear', category: 'deportes', nivel: 2, location: 'B-35', description: 'Equipamiento outdoor', phone: '(011) 1234-5694' },
-    { id: 18, name: 'Salon & Spa', category: 'belleza', nivel: 1, location: 'A-28', description: 'Salón de belleza', phone: '(011) 1234-5695' },
-    { id: 19, name: 'Home Essentials', category: 'hogar', nivel: 2, location: 'B-15', description: 'Artículos para el hogar', phone: '(011) 1234-5696' },
-    { id: 20, name: 'Game Store', category: 'juguetes', nivel: 3, location: 'C-28', description: 'Videojuegos y consolas', phone: '(011) 1234-5697' }
+    { id: 1, name: 'Fashion Store', category: 'ropa', nivel: 1, location: 'A-12', description: 'Ropa de moda para toda la familia', phone: '(54) 5617-2498' },
+    { id: 2, name: 'Tech World', category: 'tecnologia', nivel: 2, location: 'B-05', description: 'Tecnología y electrónica', phone: '(54) 1234-5679' },
+    { id: 3, name: 'Sports Zone', category: 'deportes', nivel: 1, location: 'A-25', description: 'Artículos deportivos', phone: '(54) 1234-5680' },
+    { id: 4, name: 'Beauty Corner', category: 'belleza', nivel: 2, location: 'B-18', description: 'Cosméticos y productos de belleza', phone: '(54) 1234-5681' },
+    { id: 5, name: 'Home Design', category: 'hogar', nivel: 3, location: 'C-08', description: 'Decoración y muebles', phone: '(54) 1234-5682' },
+    { id: 6, name: 'Toy Land', category: 'juguetes', nivel: 2, location: 'B-30', description: 'Juguetes para todas las edades', phone: '(54) 1234-5683' },
+    { id: 7, name: 'LatteLab', category: 'gastronomia', nivel: 2, location: 'B-31', description: 'Cafeteria de autor', phone: '(54) 11 1234 5678', repo: "https://github.com/Metaldev-06/actividad-obligatoria-LatteLab", pages: "https://metaldev-06.github.io/actividad-obligatoria-LatteLab/index.html" },
+    { id: 8, name: 'Senshi Sushi', category: 'gastronomia', nivel: 3, location: 'C-09', description: 'Sushi de autor', phone: '(54) 11 3453-0825', repo: "https://github.com/TomasFiginiUADE/Senshi-sushi", pages: "https://tomasfiginiuade.github.io/Senshi-sushi/index.html" },
+    { id: 9, name: 'AviaStore', category: 'tecnologia', nivel: 1, location: 'A-14', description: 'Tienda de tecnologia para aviones', phone: '(54) 11 4567-8901', repo: "https://github.com/IviStrel/web-tpo", pages: "https://ivistrel.github.io/web-tpo/index.html" },
+    { id: 10, name: 'LOOK', category: 'belleza', nivel: 2, location: 'B-20', description: 'Tienda de anteojos de sol', phone: '(54) 11 6576-8709', repo: "https://github.com/Leandro-Ezequiel-Rial/look-local-comercial-viernes", pages: "https://leandro-ezequiel-rial.github.io/look-local-comercial-viernes/" },
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -69,8 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
             'belleza': 'Belleza y Cosmética',
             'hogar': 'Hogar y Decoración',
             'juguetes': 'Juguetes',
-            'libros': 'Libros y Papelería',
-            'otros': 'Otros'
         };
         
         card.innerHTML = `
@@ -86,8 +74,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p><strong>Teléfono:</strong> ${store.phone}</p>
             </div>
             <div class="store-actions">
+                <a href="${store.repo}" target="_blank" class="btn btn-outline-small">Ver repositorio</a>
+                <a href="${store.pages}" target="_blank" class="btn btn-outline-small">Ver pagina</a>
                 <button class="btn btn-small" onclick="highlightStore(${store.id})" aria-label="Mostrar ${store.name} en el mapa">Ver en mapa</button>
-                <a href="contact.html" class="btn btn-outline-small">Contactar</a>
             </div>
         `;
         

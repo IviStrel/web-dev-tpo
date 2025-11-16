@@ -11,7 +11,7 @@
   --secondary-color: #10b981;
   --accent-color: #f59e0b;
   --text-primary: #1f2937;
-  --text-secondary: #6b7280;
+  --text--secondary: #6b7280;
   --bg-primary: #ffffff;
   --bg-secondary: #f9fafb;
   --bg-dark: #111827;
@@ -108,7 +108,7 @@ h4 {
 
 p {
   margin-bottom: 1rem;
-  color: var(--text-secondary);
+  color: var(--text--secondary);
 }
 
 a {
@@ -359,7 +359,7 @@ label {
   :root {
     --primary-color: #0000ff;
     --text-primary: #000000;
-    --text-secondary: #000000;
+    --text--secondary: #000000;
     --border-color: #000000;
   }
 

@@ -26,7 +26,7 @@
         <div class="nav-container">
           <div class="logo">
             <a href="index.html" aria-label="Ir a inicio">
-              <h1>Centro Temático</h1>
+              <h1>Centro Comercial KotoKoto</h1>
             </a>
           </div>
           <button
@@ -117,8 +117,6 @@
                 <option value="belleza">Belleza y Cosmética</option>
                 <option value="hogar">Hogar y Decoración</option>
                 <option value="juguetes">Juguetes</option>
-                <option value="libros">Libros y Papelería</option>
-                <option value="otros">Otros</option>
               </select>
             </div>
           </div>
@@ -134,6 +132,7 @@
               class="store-map"
               role="img"
               aria-label="Mapa del centro comercial con ubicación de locales"
+              style="position: relative; background: #f8fafc; border-radius: 14px; box-shadow: var(--shadow-md); padding: 24px; overflow-x: auto;"
             >
               <div class="map-legend">
                 <h3>Leyenda</h3>
@@ -143,9 +142,27 @@
                   <li><span class="legend-color nivel3"></span> Nivel 3</li>
                 </ul>
               </div>
-              <div class="map-grid" id="map-grid">
-                <!-- // -->
+
+              <!-- MAPA INTERACTIVO ESTILO PLANO -->
+              <div style="width:100%; min-width:600px; overflow-x:auto;">
+                <div style="position: relative; width: 820px; height: 480px; background: url('images/centro-comercial-plano-bg.png') no-repeat center center; background-size: cover; border-radius: 12px; margin: 0 auto; border: 1.5px solid #e2e8f0;">
+                  <!-- Caminos principales - SVG overlay (como la referencia visual) -->
+                  <svg width="820" height="480" style="position:absolute;top:0;left:0;z-index:0;pointer-events:none;">
+                    <!-- Ejemplo de caminos: personalízalos según el plano real --> 
+                    <polyline points="200,60 180,140 300,160 330,90 400,120 420,60 600,80 790,110 740,240 650,250 540,260 360,290 180,260 130,370 360,380 490,420 650,420 720,330 800,355" 
+                      style="fill:none;stroke:#3399ff;stroke-width:4;stroke-dasharray:8,7; opacity:0.5"/>
+                    <!-- Puedes agregar más caminos según corresponda -->
+                  </svg>
+
+                  <!-- PINS de locales ejemplo; estos son interactivos y se renderizan por JS en #map-grid, aquí solo ponemos el fondo/plano y caminos -->
+
+                  <div class="map-grid" id="map-grid" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <!-- Aquí JS coloca los locales como pines/celdas interactivos -->
+                  </div>
+                </div>
               </div>
+              <!-- FIN MAPA INTERACTIVO ESTILO PLANO -->
+
             </div>
           </div>
         </div>
@@ -177,7 +194,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <h3>Centro Temático</h3>
+            <h3>Centro Comercial KotoKoto</h3>
             <p>
               Tu destino para compras, entretenimiento y experiencias únicas.
             </p>
@@ -196,9 +213,9 @@
           </div>
           <div class="footer-section">
             <h4>Contacto</h4>
-            <p>Dirección: Av. Principal 1234</p>
-            <p>Teléfono: (011) 1234-5678</p>
-            <p>Email: info@centrotematico.com</p>
+            <p>Dirección: Av. Libertador 1734</p>
+            <p>Teléfono: (011) 5617-2498</p>
+            <p>Email: info@centrocomercialkotokoto.com</p>
           </div>
           <div class="footer-section">
             <h4>Horarios</h4>
@@ -207,8 +224,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2024 Centro Temático. Todos los derechos reservados.</p>
-          <p>Diseñado con accesibilidad y usabilidad en mente.</p>
+          <p>&copy; 2025 Centro Comercial KotoKoto. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

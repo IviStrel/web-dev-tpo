@@ -68,7 +68,7 @@
 .entertainment-description {
     font-size: 1.1rem;
     margin-bottom: 24px;
-    color: var(--text-secondary);
+    color: var(--text--secondary);
     line-height: 1.8;
 }
 
@@ -151,7 +151,7 @@
 
 .cultural-item p {
     margin-bottom: 12px;
-    color: var(--text-secondary);
+    color: var(--text--secondary);
 }
 
 .cultural-schedule {
@@ -219,7 +219,7 @@
 
 .event-content p {
     margin-bottom: 8px;
-    color: var(--text-secondary);
+    color: var(--text--secondary);
 }
 
 .event-location {

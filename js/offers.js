@@ -25,73 +25,49 @@ const offers = [
     },
     {
         id: 3,
-        title: '2x1 en Artículos Deportivos',
-        store: 'Sports Zone',
-        category: 'deportes',
-        discount: '2x1',
-        description: 'Lleva dos productos y paga solo uno. Aplica en toda la sección de calzado deportivo.',
-        image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop',
-        validity: 'Válido hasta el 20 de diciembre',
-        featured: true,
+        title: 'Descuento en Gastronomía',
+        store: 'LatteLab',
+        category: 'gastronomia',
+        description: 'Descuentos especiales en cafés. Financiación disponible.',
+        image: './images/lattelab.svg',
+        validity: 'Válido hasta el 31 de diciembre',
+        pages: 'https://metaldev-06.github.io/actividad-obligatoria-LatteLab/src/pages/promotions.html',
+        featured: false,
         expired: false
     },
     {
         id: 4,
-        title: 'Kit de Belleza Completo',
-        store: 'Beauty Corner',
-        category: 'belleza',
-        discount: '40% OFF',
-        description: 'Kit completo de productos de belleza con un increíble descuento. Incluye maquillaje y cuidado de la piel.',
-        image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=400&fit=crop',
-        validity: 'Válido hasta el 10 de enero',
+        title: 'Descuento en Gastronomía',
+        store: 'Senshi Sushi',
+        category: 'gastronomia',
+        description: 'Descuentos especiales en sushi. Financiación disponible.',
+        image: './images/senshi.png',
+        pages: 'https://tomasfiginiuade.github.io/Senshi-sushi/promociones.html',
+        validity: 'Válido hasta el 31 de diciembre',
         featured: false,
         expired: false
     },
     {
         id: 5,
-        title: 'Muebles para el Hogar',
-        store: 'Home Design',
-        category: 'hogar',
-        discount: '35% OFF',
-        description: 'Renueva tu hogar con nuestros muebles con descuento. Envío gratis en compras mayores a $50.000.',
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop',
-        validity: 'Válido hasta el 25 de diciembre',
+        title: 'Descuento en Tecnología',
+        store: 'AviaStore',
+        category: 'tecnologia',
+        description: 'Descuentos especiales en tecnología para aviones. Financiación disponible.',
+        image: './images/aviastore.png',
+        pages: 'https://ivistrel.github.io/web-tpo/promociones.html',
+        validity: 'Válido hasta el 31 de diciembre',
         featured: false,
         expired: false
     },
     {
         id: 6,
-        title: 'Juguetes para Navidad',
-        store: 'Toy Land',
-        category: 'juguetes',
-        discount: '20% OFF',
-        description: 'Prepara la Navidad con descuentos especiales en juguetes. Los mejores precios del mercado.',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
-        validity: 'Válido hasta el 24 de diciembre',
-        featured: true,
-        expired: false
-    },
-    {
-        id: 7,
-        title: 'Libros y Papelería',
-        store: 'Book Haven',
-        category: 'libros',
-        discount: '15% OFF',
-        description: 'Descuentos en libros, cuadernos y útiles escolares. Perfecto para el regreso a clases.',
-        image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop',
-        validity: 'Válido hasta el 31 de enero',
-        featured: false,
-        expired: false
-    },
-    {
-        id: 8,
-        title: 'Calzado de Temporada',
-        store: 'Shoe Palace',
-        category: 'ropa',
-        discount: '30% OFF',
-        description: 'Zapatos y zapatillas con descuento. Variedad de modelos y talles disponibles.',
-        image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=400&fit=crop',
-        validity: 'Válido hasta el 30 de diciembre',
+        title: 'Descuento en Belleza',
+        store: 'LOOK',
+        category: 'belleza',
+        description: 'Descuentos especiales en anteojos de sol. Financiación disponible.',
+        image: './images/look.png',
+        pages: 'https://leandro-ezequiel-rial.github.io/look-local-comercial-viernes/promociones.html',
+        validity: 'Válido hasta el 31 de diciembre',
         featured: false,
         expired: false
     }
@@ -156,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="offer-content">
                 <div class="offer-header">
                     <h3 class="offer-title">${offer.title}</h3>
-                    <span class="offer-discount" aria-label="Descuento ${offer.discount}">${offer.discount}</span>
+                    ${offer.discount ? `<span class="offer-discount" aria-label="Descuento ${offer.discount}">${offer.discount}</span>` : ''}
                 </div>
                 <p class="offer-store">📍 ${offer.store}</p>
                 <p class="offer-description">${offer.description}</p>
@@ -164,10 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p><strong>Válido:</strong> ${offer.validity}</p>
                 </div>
                 <div class="offer-validity">${offer.validity}</div>
-                <div class="offer-actions">
-                    <button class="btn" onclick="viewOffer(${offer.id})" aria-label="Ver detalles de ${offer.title}">Ver Detalles</button>
-                    <a href="stores.html" class="btn btn-outline">Ir al Local</a>
-                </div>
+                ${offer.pages ? `<a href="${offer.pages}" target="_blank" class="btn btn-outline-small">Ver Detalles</a>` : ''}
             </div>
         `;
         
