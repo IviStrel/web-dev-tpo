@@ -19,11 +19,22 @@
   --error-color: #ef4444;
   --success-color: #10b981;
   --warning-color: #f59e0b;
+  --chat-bot-text-color: white;
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
+
+  /* Estilos del Chat Bot */
+  --chat--color--primary: var(--primary-color) !important;
+  --chat--color--primary-shade-50: #1e40af !important;
+  --chat--color--primary--shade-100: #1c3aa3 !important;
+  --chat--color--secondary: var(--secondary-color) !important;
+  --chat--header--background: var(--primary-color) !important;
+  --chat--header--color: var(--chat-bot-text-color) !important;
+  --text-secondary: white !important;
+  --chat--message--bot--background: var(--text-primary) !important;
 }
 
 html {
@@ -39,6 +50,13 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.chat-window {
+  overflow: hidden !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) !important;
 }
 
 .skip-link {
