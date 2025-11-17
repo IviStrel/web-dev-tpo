@@ -33,7 +33,7 @@ const offers = [
     store: "LatteLab",
     category: "gastronomia",
     description: "Descuentos especiales en cafés. Financiación disponible.",
-    image: "./images/lattelab.svg",
+    image: "./images/lattelab.jpg",
     validity: "Válido hasta el 31 de diciembre",
     pages:
       "https://metaldev-06.github.io/actividad-obligatoria-LatteLab/src/pages/promotions.html",
@@ -216,32 +216,4 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   initializeOffers();
-
-  const prefersReducedMotion = window.matchMedia(
-    "(prefers-reduced-motion: reduce)"
-  ).matches;
-
-  if (!prefersReducedMotion && "IntersectionObserver" in window) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-      }
-    );
-
-    const offerCards = document.querySelectorAll(".offer-card");
-    offerCards.forEach((card) => {
-      card.style.opacity = "0";
-      card.style.transform = "translateY(20px)";
-      card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-      observer.observe(card);
-    });
-  }
 });
