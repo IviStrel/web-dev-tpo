@@ -151,22 +151,18 @@
                 </ul>
               </div>
 
-              <!-- MAPA INTERACTIVO ESTILO PLANO -->
               <div style="width: 100%; min-width: 600px; overflow-x: auto">
                 <div
                   style="
                     position: relative;
                     width: 820px;
                     height: 480px;
-                    background: url('images/centro-comercial-plano-bg.png')
-                      no-repeat center center;
                     background-size: cover;
                     border-radius: 12px;
                     margin: 0 auto;
                     border: 1.5px solid #e2e8f0;
                   "
                 >
-                  <!-- Caminos principales - SVG overlay (como la referencia visual) -->
                   <svg
                     width="820"
                     height="480"
@@ -178,7 +174,6 @@
                       pointer-events: none;
                     "
                   >
-                    <!-- Ejemplo de caminos: personalízalos según el plano real -->
                     <polyline
                       points="200,60 180,140 300,160 330,90 400,120 420,60 600,80 790,110 740,240 650,250 540,260 360,290 180,260 130,370 360,380 490,420 650,420 720,330 800,355"
                       style="
@@ -189,10 +184,7 @@
                         opacity: 0.5;
                       "
                     />
-                    <!-- Puedes agregar más caminos según corresponda -->
                   </svg>
-
-                  <!-- PINS de locales ejemplo; estos son interactivos y se renderizan por JS en #map-grid, aquí solo ponemos el fondo/plano y caminos -->
 
                   <div
                     class="map-grid"
@@ -204,12 +196,9 @@
                       width: 100%;
                       height: 100%;
                     "
-                  >
-                    <!-- Aquí JS coloca los locales como pines/celdas interactivos -->
-                  </div>
+                  ></div>
                 </div>
               </div>
-              <!-- FIN MAPA INTERACTIVO ESTILO PLANO -->
             </div>
           </div>
         </div>
@@ -218,9 +207,7 @@
       <section class="stores-section" aria-labelledby="stores-list-title">
         <div class="container">
           <h2 id="stores-list-title">Lista de Locales</h2>
-          <div id="stores-list" class="stores-list" role="list">
-            <!-- // -->
-          </div>
+          <div id="stores-list" class="stores-list" role="list"></div>
           <div
             id="no-results"
             class="no-results"
@@ -279,8 +266,8 @@
       </div>
     </footer>
 
-    <script src="js/navigation.js"></script>
-    <script src="js/stores.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script type="module" src="js/stores.js"></script>
 
     <link
       href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"

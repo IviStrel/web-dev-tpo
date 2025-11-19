@@ -1,389 +1,369 @@
-.page-header {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.page-header h1 {
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 16px;
-}
-
-.page-subtitle {
-    font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.95);
-    margin: 0;
-}
-
 .stores-section {
-    padding: 60px 20px;
+  padding: 60px 20px;
 }
 
 .stores-section:nth-child(even) {
-    background-color: var(--bg-secondary);
+  background-color: var(--bg-secondary);
 }
 
 .search-container {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .search-wrapper {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .search-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: var(--text-primary);
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-primary);
 }
 
 .search-input-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .search-input {
-    width: 100%;
-    padding: 14px 50px 14px 16px;
-    font-size: 1.1rem;
-    border: 2px solid var(--border-color);
-    border-radius: 8px;
-    transition: var(--transition);
+  width: 100%;
+  padding: 14px 50px 14px 16px;
+  font-size: 1.1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  transition: var(--transition);
 }
 
 .search-input:focus {
-    border-color: var(--primary-color);
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 .search-icon {
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5rem;
-    pointer-events: none;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  pointer-events: none;
 }
 
 .search-results-count {
-    margin-top: 12px;
-    font-size: 0.9rem;
-    color: var(--text--secondary);
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: var(--text--secondary);
 }
 
 .filter-container {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 .filter-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: var(--text-primary);
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-primary);
 }
 
 .filter-select {
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-    border: 2px solid var(--border-color);
-    border-radius: 8px;
-    background-color: white;
-    cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
 }
 
 .filter-select:focus {
-    border-color: var(--primary-color);
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 .map-container {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
 .store-map {
-    background: var(--bg-secondary);
-    border-radius: 12px;
-    padding: 32px;
-    box-shadow: var(--shadow-md);
-    position: relative;
-    min-height: 500px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  min-height: 500px;
 }
 
 .map-legend {
-    position: absolute;
-    top: 32px;
-    right: 32px;
-    background: white;
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: var(--shadow-sm);
-    z-index: 10;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  z-index: 10;
 }
 
 .map-legend h3 {
-    font-size: 1rem;
-    margin-bottom: 12px;
-    color: var(--text-primary);
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: var(--text-primary);
 }
 
 .map-legend ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .map-legend li {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
-    font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
 }
 
 .legend-color {
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
-    display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 .legend-color.nivel1 {
-    background-color: #ef4444;
+  background-color: #ef4444;
 }
 
 .legend-color.nivel2 {
-    background-color: #3b82f6;
+  background-color: #3b82f6;
 }
 
 .legend-color.nivel3 {
-    background-color: #10b981;
+  background-color: #10b981;
 }
 
 .map-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 16px;
-    margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
 }
 
 .map-store {
-    aspect-ratio: 1;
-    background: white;
-    border: 2px solid var(--border-color);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: var(--transition);
-    position: relative;
-    padding: 8px;
-    text-align: center;
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--text-primary);
+  aspect-ratio: 1;
+  background: white;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+  padding: 8px;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-primary);
 }
 
 .map-store:hover,
 .map-store:focus {
-    border-color: var(--primary-color);
-    transform: scale(1.05);
-    box-shadow: var(--shadow-md);
-    outline: none;
+  border-color: var(--primary-color);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-md);
+  outline: none;
 }
 
 .map-store.highlighted {
-    border-color: var(--accent-color);
-    background-color: #fef3c7;
-    box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.2);
-    z-index: 5;
+  border-color: var(--accent-color);
+  background-color: #fef3c7;
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.2);
+  z-index: 5;
 }
 
 .map-store.nivel1 {
-    border-left: 4px solid #ef4444;
+  border-left: 4px solid #ef4444;
 }
 
 .map-store.nivel2 {
-    border-left: 4px solid #3b82f6;
+  border-left: 4px solid #3b82f6;
 }
 
 .map-store.nivel3 {
-    border-left: 4px solid #10b981;
+  border-left: 4px solid #10b981;
 }
 
 .stores-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 24px;
-    margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
 }
 
 .store-card {
-    background: white;
-    border-radius: 12px;
-    padding: 24px;
-    box-shadow: var(--shadow-md);
-    transition: var(--transition);
-    border: 2px solid transparent;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  border: 2px solid transparent;
 }
 
 .store-card:hover,
 .store-card:focus {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--primary-color);
-    outline: none;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
+  outline: none;
 }
 
 .store-card.hidden {
-    display: none;
+  display: none;
 }
 
 .store-card.highlighted {
-    border-color: var(--accent-color);
-    background-color: #fef3c7;
-    box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.2);
+  border-color: var(--accent-color);
+  background-color: #fef3c7;
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.2);
 }
 
 .store-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 16px;
 }
 
 .store-name {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0;
 }
 
 .store-category {
-    display: inline-block;
-    padding: 4px 12px;
-    background: var(--bg-secondary);
-    border-radius: 20px;
-    font-size: 0.85rem;
-    color: var(--primary-dark);
-    margin-top: 8px;
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--bg-secondary);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--primary-dark);
+  margin-top: 8px;
 }
 
 .store-info {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .store-info p {
-    margin-bottom: 8px;
-    color: var(--primary-dark);
-    font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: var(--primary-dark);
+  font-size: 0.95rem;
 }
 
 .store-info strong {
-    color: var(--text-primary);
+  color: var(--text-primary);
 }
 
 .store-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
 }
 
 .btn-small {
-    padding: 8px 16px;
-    font-size: 0.9rem;
+  padding: 8px 16px;
+  font-size: 0.9rem;
 }
 
 .btn-outline-small {
-    padding: 8px 16px;
-    font-size: 0.9rem;
-    background: transparent;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .btn-outline-small:hover {
-    background: var(--primary-color);
-    color: white;
+  background: var(--primary-color);
+  color: white;
 }
 
 .no-results {
-    text-align: center;
-    padding: 48px 24px;
-    background: var(--bg-secondary);
-    border-radius: 12px;
-    margin-top: 32px;
+  text-align: center;
+  padding: 48px 24px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  margin-top: 32px;
 }
 
 .no-results p {
-    font-size: 1.1rem;
-    color: var(--text--secondary);
-    margin-bottom: 24px;
+  font-size: 1.1rem;
+  color: var(--text--secondary);
+  margin-bottom: 24px;
 }
 
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 @media (max-width: 768px) {
-    .page-header h1 {
-        font-size: 2rem;
-    }
-    
-    .stores-section {
-        padding: 40px 20px;
-    }
-    
-    .map-legend {
-        position: static;
-        margin-bottom: 24px;
-    }
-    
-    .map-grid {
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-        gap: 12px;
-    }
-    
-    .map-store {
-        font-size: 0.75rem;
-        padding: 4px;
-    }
-    
-    .stores-list {
-        grid-template-columns: 1fr;
-    }
-    
-    .btn-small,
-    .btn-outline-small {
-        width: 100%;
-    }
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .stores-section {
+    padding: 40px 20px;
+  }
+
+  .map-legend {
+    position: static;
+    margin-bottom: 24px;
+  }
+
+  .map-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 12px;
+  }
+
+  .map-store {
+    font-size: 0.75rem;
+    padding: 4px;
+  }
+
+  .stores-list {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-small,
+  .btn-outline-small {
+    width: 100%;
+  }
 }
 
 .store-card:focus-visible,
 .map-store:focus-visible {
-    outline: 3px solid var(--primary-color);
-    outline-offset: 2px;
+  outline: 3px solid var(--primary-color);
+  outline-offset: 2px;
 }
 
 @media (prefers-contrast: high) {
-    .store-card,
-    .map-store {
-        border: 2px solid var(--text-primary);
-    }
+  .store-card,
+  .map-store {
+    border: 2px solid var(--text-primary);
+  }
 }
-
