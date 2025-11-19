@@ -163,6 +163,31 @@
       </div>
     </footer>
 
+    <template id="template-dining-card">
+      <article class="dining-card" tabindex="0" role="article">
+        <div class="dining-image-wrapper">
+          <img id="template-card-img" src="" alt="" class="dining-image" />
+          <span id="dining-type" class="dining-type"></span>
+        </div>
+        <div class="dining-content">
+          <h3 id="dining-name" class="dining-name"></h3>
+          <p id="dining-description" class="dining-description"></p>
+          <div id="dining-specialty" class="dining-specialty"></div>
+          <div class="dining-info">
+            <p>
+              <strong>Ubicación:</strong> <span id="dining-location"></span>
+            </p>
+            <p><strong>Horarios:</strong> <span id="dining-hours"></span></p>
+            <p><strong>Teléfono:</strong> <span id="dining-phone"></span></p>
+          </div>
+          <div class="dining-actions">
+            <a href="contact.html" class="btn btn-outline-small">Contactar</a>
+            <a href="stores.html" class="btn btn-outline">Ver en Mapa</a>
+          </div>
+        </div>
+      </article>
+    </template>
+
     <script src="js/navigation.js"></script>
     <script type="module" src="js/dining.js"></script>
 
