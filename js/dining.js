@@ -1,50 +1,34 @@
 import { diningPlaces } from "../data/dining-data.js";
 
-document.addEventListener("DOMContentLoaded", function () {
-  const diningGrid = document.getElementById("dining-grid");
+const diningGrid = document.getElementById("dining-grid");
+const templateCard = document.getElementById("template-dining-card").content;
 
-  function initializeDining() {
-    renderDiningPlaces();
-  }
+const fragment = document.createDocumentFragment();
 
-  function renderDiningPlaces() {
-    diningGrid.innerHTML = "";
+const createDiningCard = (places) => {
+  diningGrid.innerHTML = "";
 
-    diningPlaces.forEach((place) => {
-      const card = createDiningCard(place);
-      diningGrid.appendChild(card);
-    });
-  }
+  places.map((item) => {
+    const clone = templateCard.cloneNode(true);
+    const img = clone.getElementById("template-card-img");
 
-  function createDiningCard(place) {
-    const card = document.createElement("article");
-    card.className = "dining-card";
-    card.setAttribute("tabindex", "0");
-    card.setAttribute("role", "article");
+    img.setAttribute("src", item.image);
+    img.setAttribute("alt", `${item.name} - ${item.type}`);
 
-    card.innerHTML = `
-            <div class="dining-image-wrapper">
-                <img src="${place.image}" alt="${place.name} - ${place.type}" class="dining-image">
-                <span class="dining-type">${place.type}</span>
-            </div>
-            <div class="dining-content">
-                <h3 class="dining-name">${place.name}</h3>
-                <p class="dining-description">${place.description}</p>
-                <div class="dining-specialty">${place.specialty}</div>
-                <div class="dining-info">
-                    <p><strong>Ubicación:</strong> ${place.location}</p>
-                    <p><strong>Horarios:</strong> ${place.hours}</p>
-                    <p><strong>Teléfono:</strong> ${place.phone}</p>
-                </div>
-                <div class="dining-actions">
-                    <a href="contact.html" class="btn btn-outline-small">Contactar</a>
-                    <a href="stores.html" class="btn btn-outline">Ver en Mapa</a>
-                </div>
-            </div>
-        `;
+    clone.getElementById("dining-type").textContent = item.type;
+    clone.getElementById("dining-name").textContent = item.name;
+    clone.getElementById("dining-description").textContent = item.description;
+    clone.getElementById("dining-specialty").textContent = item.specialty;
+    clone.getElementById("dining-location").textContent = item.location;
+    clone.getElementById("dining-hours").textContent = item.hours;
+    clone.getElementById("dining-phone").textContent = item.phone;
 
-    return card;
-  }
+    fragment.appendChild(clone);
+  });
 
-  initializeDining();
+  diningGrid.appendChild(fragment);
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  createDiningCard(diningPlaces);
 });
